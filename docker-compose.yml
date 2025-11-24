@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   web:
     build: .
@@ -11,8 +9,8 @@ services:
       - ENVIRONMENT=development
     command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
-  # В будущем можно будет добавить другие сервисы (БД, Redis и т.д.)
-  # redis:
-  #   image: redis:alpine
-  #   ports:
-  #     - "6379:6379"
+# В будущем можно будет добавить другие сервисы (БД, Redis и т.д.)
+# redis:
+#   image: redis:alpine
+#   ports:
+#     - "6379:6379"
